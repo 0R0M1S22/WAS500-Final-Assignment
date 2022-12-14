@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* The sidebar menu */
+.sidenav {
+    height: 100%; 
+    width: 160px; 
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    background-color: #111; 
+    padding-top: 20px;
+}
+/* The navigation menu links */
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+  
+.sidenav a:hover {
+    color: rgba(250, 214, 31, 0.87);
+}
+  
+  
+/* Style page content */
+.main {
+    margin-left: 160px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+}
+/*Books page style*/
+.booklist{
+    margin-left: 160px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+    border-style: solid;
+    /*border-color: rgb(182, 43, 233);*/
+    border-color:rgba(250, 214, 31, 0.87);
+    position: relative;
+}
+
+/*All webpages commons style*/
+html {
+    font-family: verdana;
+    font-size: 20px;
+    color:rgba(250, 214, 31, 0.87);
+    text-align: center;
+    background-color: rgba(44, 5, 44, 0.921);
+}
+
+/*Link color*/
+a{
+    color:rgba(250, 214, 31, 0.87);
+}
+
+/*aside and footer specifications*/ 
+aside {
+    width: 30%;
+    padding-top: 40px;
+    margin-top: 40px;
+    padding-right: 15px;
+    margin-right: 150px;
+    float: right;
+}
+footer {
+    width: 30%;
+    padding-top: 50px;
+    margin-top: 50px;
+    padding-left: 225px;
+    margin-left: 225px;
+    float: bottom;
+    text-align: center;
+}
+
+     </style>
+  </head>
+  
+<body>
+
+<%- include('partials/Navigation') %>
+
+
+
+<div class="main">
+    <h1>Detritus Archives</h1>
+    <h2>Welcome to the Archives of Detritus</h2>
+    <p> Welcome to The Detritus archives. Please use the navigation menu on the left</p>
+</div>
+
+</body>
+
+</html>
